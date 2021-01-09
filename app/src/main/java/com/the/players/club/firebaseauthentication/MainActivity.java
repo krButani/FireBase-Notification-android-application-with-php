@@ -66,52 +66,7 @@ public class MainActivity extends AppCompatActivity {
             notificationManager.createNotificationChannel(channel);
         }
 
-        /*final NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "101")
-                .setSmallIcon(R.drawable.shopplus)
-                .setContentTitle("IIId")
-                .setContentText("dude")
-                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-                .setAutoCancel(true);
-        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
-        notificationManager.notify((int) Math.floor(Math.random()), builder.build());
 
-        Context ctx = this;
-
-        String imgurl = "http://libroservices.com/images/loginlogo.png";
-        ImageRequest imageRequest = new ImageRequest(imgurl,
-                new Response.Listener<Bitmap>() {
-                    @Override
-                    public void onResponse(Bitmap response) {
-                        // Assign the response to an ImageView
-                        try {
-
-                            if(response != null) {
-                                NotificationCompat.BigPictureStyle big = new NotificationCompat.BigPictureStyle().bigPicture(response);
-                                builder.setStyle(big);
-                            }
-
-
-                            //NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-
-                            notificationManager.notify((int) Math.floor(Math.random()), builder.build());
-                            Toast.makeText(ctx,"load" ,Toast.LENGTH_LONG).show();
-                        } catch (Exception ex) {
-                            Toast.makeText(ctx,ex.toString() ,Toast.LENGTH_LONG).show();
-                        }
-
-                    }
-                }, 0, 0, null, Bitmap.Config.RGB_565,new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                error.printStackTrace();
-                Toast.makeText(ctx,"err" ,Toast.LENGTH_LONG).show();
-            }
-        });
-
-        RequestQueue queue = Volley.newRequestQueue(ctx);
-        queue.add(imageRequest);
-
-        Toast.makeText(ctx,"called" ,Toast.LENGTH_LONG).show();*/
     }
 
     private void subscribeTopics() {
